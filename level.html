@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 层级选择器 -->
+    <!-- 在cls_div 下的h1 红色-->
+    <style>
+    /* 在cls_div 下的h1 红色 */
+        .cls_div h1{
+            color:red;
+        }
+        .cls_div #test{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="cls_div">
+        <h1>hellow world</h1>
+    </div>
+    <h1>hellow world</h1>
+    <div class="cls_div">
+        <h1 id="test">hello 2</h1>
+    </div>
+</body>
+</html>
