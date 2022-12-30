@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .round{
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            background-color: blue;
+            border-radius: 50% 50%;
+            /*整个页面的水平居中*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /*无论怎么缩放网页都元素都处于浏览器中间*/
+            transform: translate(-50%,-50%);
+            box-shadow: 10px 10px 100px red;
+        }
+    </style>
+</head>
+<body>
+  <div class="round">
+
+  </div>
+</body>
+</html>
