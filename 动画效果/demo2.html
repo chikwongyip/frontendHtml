@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes wave_move {
+            0%{
+                transform: translate(0%);
+            }
+            50%{
+                transform: translate(50%);
+            }
+            100%{
+                transform: translate(0%);
+            }
+        }
+        @keyframes ship_move{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(5deg);
+            }
+            100%{
+                transform: rotate(-5deg);
+            }
+        }
+        .wave{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+        .wave>.wave1{
+            width: 3000px;
+            height: 100px;
+            position: fixed;
+            bottom: 80px;
+            right: 0px;
+            animation: wave_move 50s linear 1s infinite running;
+            animation-play-state:initial;
+        }
+        .wave>.wave2{
+            width: 3000px;
+            height: 100px;
+            position: fixed;
+            bottom: 40px;
+            right: 0px;
+            animation: wave_move 40s linear 2s infinite running;
+            animation-play-state:initial;
+        }
+        .wave>.wave3{
+            width: 3000px;
+            height: 100px;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            animation: wave_move 30s linear 3s infinite running;
+            animation-play-state:initial;
+        }
+        .ship{
+            position: fixed;
+            bottom:100px;
+            right: 100px;
+            animation: ship_move 5s linear 1s infinite running;
+        }
+    </style>
+</head>
+<body background="img/bg.png">
+    <div class="ship">
+        <img src="img/ship.png" alt="">
+    </div>
+    <div class="wave">
+        <img class="wave1" src="img/wave1.png" alt="">
+        <img class="wave2" src="img/wave2.png" alt="">
+        <img class="wave3" src="img/wave3.png" alt="">
+    </div>
+</body>
+</html>
