@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            display: grid;
+            grid-template-columns: 600px 100px;
+            grid-template-rows:50px 500px 500px 500px 50px;
+            margin: 0 auto;
+            border: 1px solid red;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .header{
+            border: 1px solid red;
+            grid-column: 1 / 3;
+        }
+        .docs{
+            border: 1px solid red;
+        }
+        .blogs{
+            border: 1px solid red;
+        }
+        .videos{
+            border: 1px solid red;
+        }
+        .aside{
+            border: 1px solid rgb(105, 64, 64);
+            grid-column: 2 / 3;
+            grid-row: 2 / 5; 
+        }
+        .footer{
+            border: 1px solid red;
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>header</h3>
+        </div>
+        <div class="docs">
+            <h3>docs</h3>
+        </div>
+        <div class="blogs">
+            <h3>blogs</h3>
+        </div>
+        <div class="videos">
+            <h3>videos</h3>
+        </div>
+        <div class="aside">
+            <h3>aside</h3>
+        </div>
+        <div class="footer">
+            <h3>footer</h3>
+        </div>
+    </div>
+</body>
+</html>
