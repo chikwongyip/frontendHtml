@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>
+        hello
+    </button>
+    <script>
+        let btn = document.querySelector("button");
+        btn.onclick = function(){
+            btn.innerHTML = "yes";
+        }
+        btn.onmouseenter = function(){
+            btn.innerHTML = "wa kao";
+        }
+        btn.onmouseleave = function(){
+            btn.innerHTML = "wa cao";
+            this.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>
