@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-container img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <img src="images/img1.jpg" alt="">
+    </div>
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <script>
+        let imagesList = ["images/img1.jpg","images/img2.jpg","images/img3.jpg"];
+        let btnList = document.querySelectorAll(".btn");
+        for(let index in btnList){
+           btnList[index].onclick = function(){
+             let img = document.querySelector(".img-container img"); 
+             img.src = imagesList[index];
+           }
+            // btnList[index].addEventListener("click",function(){
+            //     let img = document.querySelector(".img-container img");
+            //     img.src = imagesList[index];
+            // })
+        }
+    </script>
+</body>
+</html>
