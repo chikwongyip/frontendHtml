@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>12:00:00</h1>
+    <button>stop</button>
+    <script>
+        let h1 = document.querySelector("h1");
+        let btn = document.querySelector("button");
+        let timer = setInterval(() =>{
+            let time = new Date();
+            let hours = time.getHours();
+            let mins  = time.getMinutes();
+            let seconds = time.getSeconds();
+            h1.textContent = `${hours} : ${mins} : ${seconds}`;
+        },500)
+
+        btn.onclick = function(){
+            clearInterval(timer);
+        }
+    </script>
+</body>
+</html>
